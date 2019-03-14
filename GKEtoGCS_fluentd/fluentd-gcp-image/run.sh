@@ -18,11 +18,11 @@
 # been mounted, and therefore cannot be done in the docker build stage.
 
 # Set env_variables for Certifying to use .JSON-file
-_ServiceAccount_Filename=xxxx
+_ServiceAccount_Info=xxxx
 
 # For creating fluentd service key
 mkdir -p /etc/fluentd/svc_key
-echo `cat ./$_ServiceAccount_Filename` > /etc/fluentd/svc_key/access_gcs_service_key.json
+echo $_ServiceAccount_Info > /etc/fluentd/svc_key/access_gcs_service_key.json
 
 # For systems without journald
 mkdir -p /var/log/journal
