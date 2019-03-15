@@ -368,7 +368,6 @@ data:
 
       unique_strategy increment
       format json
-      compress gzip
 
       buffer_type memory
       buffer_chunk_limit 10m
@@ -388,7 +387,6 @@ data:
 
       unique_strategy increment
       format json
-      compress gzip
 
       buffer_type memory
       buffer_chunk_limit 10m
